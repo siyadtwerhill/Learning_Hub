@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: taskapp-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: taskapp
+    ports:
+      - "5432:5432"
+    volumes:
+      - taskapp-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  taskapp-postgres-data:

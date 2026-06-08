@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-family: 'DM Sans', sans-serif; }
+  body { background-color: #f8f7f4; color: #1a1a2e; margin: 0; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4 { font-family: 'Sora', sans-serif; }
+}
+
+@layer utilities {
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+}
